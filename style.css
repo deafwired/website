@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Pixel Code";
+    src: URL('/fonts/pixelcode.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: "Pixel Code";
+    src: URL("/fonts/pixelcode-bold.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Pixel Code";
+    src: URL("/fonts/pixelcode-italic.ttf") format('truetype');
+    font-style: italic;
+}
+
+* {
+    font-family: "Pixel Code"
+}
+
+.dark-body {
+    background-color: #121212;
+    color: #fefefe;
+}
+
+.light-body {
+    background-color: #fefefe;
+    color: #121212;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 800px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
