@@ -11,5 +11,6 @@
 !.gitignore
 !.htaccess
 !resume.pdf
+!deadlock-guide.pdf
 !images/
 !images/*
