@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^links$ links.html [L]
+ErrorDocument 404 /404.html

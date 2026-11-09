@@ -19,10 +19,8 @@ function toggleDarkMode() {
   if (cookieValue === "True") {
     document.cookie = "DarkMode=False; SameSite=Lax; Secure";
     document.getElementById("body").className = "light-body";
-    document.getElementById("button").className = "fas fa-moon fa-lg";
   } else {
     document.cookie = "DarkMode=True; SameSite=Lax; Secure";
     document.getElementById("body").className = "dark-body";
-    document.getElementById("button").className = "fas fa-sun fa-lg";
   }
 }

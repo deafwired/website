@@ -1,39 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/DeafWired.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Matt Flynn" />
-    <meta name="description" content="DeafWired's amazing website" />
-    <meta name="keywords" content="DeafWired" />
-    <script
-      src="https://kit.fontawesome.com/c9aabc0080.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <link rel="stylesheet" href="repos.css" media="screen" />
-    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-    <title>DeafWired</title>
-  </head>
-  <body id="body">
-    <h1 class="title">
-      <span id="baffle">DeafWired</span>@<a id="cycle" class="fadeOut"></a>
-    </h1>
-    <p class="paragraph">Matt Flynn</p>
-    <div id="divResult" class="grid"></div>
-    <footer>
-      <div class="button">
-        <i id="button" class="fas fa-sun fa-lg" onclick="toggleDarkMode()"></i>
-      </div>
-      <a class="email" ; href="mailto:mtesamspam@gmail.com">
-        <i class="emailColor fas fa-envelope fa-lg"></i>
-      </a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DeafWired's terminal-themed personal website with projects, links, and resume download.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c9aabc0080.js" crossorigin="anonymous"></script>
+    <script src="baffle.min.js"></script>
+    <title>deafwired</title>
+</head>
+
+<body id="body" class="dark-body">
+    <nav>
+        <a href="./">[home]</a>
+        <a href="#projects">[projects]</a>
+        <a href="resume.pdf" target="_blank" rel="noopener">[resume.pdf]</a>
+        <button type="button" onclick="toggleDarkMode()">[swap dark/light mode]</button>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-layout">
+                <div class="intro-block">
+                    <h1><span class="baffle">deafwired</span></h1>
+                    <p class="terminal-line">> whoami</p>
+                    <p class="lede">hi! I'm Matt, an undergrad at <a href="https://drexel.edu">Drexel University</a>
+                        studying
+                        <a href="https://drexel.edu/cci/">computer science</a>. I love games and thinking about them.
+                        Some recent obssesions include Magic: the Gathering, and Deadlock.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="link-chip primary" href="#projects">[projects]</a>
+                        <a class="link-chip" href="mailto:matt@deafwired.com">[email]</a>
+                        <a class="link-chip" href="resume.pdf" target="_blank" rel="noopener">[resume.pdf]</a>
+                    </div>
+                </div>
+                <figure class="profile-figure">
+                    <img class="profile-photo" src="images/me.jpeg" alt="Portrait of Matt Flynn" width="240"
+                        height="240">
+                </figure>
+            </div>
+        </section>
+
+        <section class="panel" id="projects">
+            <div class="section-head">
+                <h2><span class="baffle">projects</span></h2>
+            </div>
+            <div class="projects">
+                <article class="project-card">
+                    <p class="project-meta">01.</p>
+                    <h3>dotfiles</h3>
+                    <p>My Linux setup, shell config, and workstation defaults. Built to keep my environment fast,
+                        repeatable, and easy to debug.</p>
+                    <a href="https://github.com/deafwired/dotfiles" target="_blank" rel="noopener">[view repo]</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-meta">02.</p>
+                    <h3>deafshell</h3>
+                    <p>This is a custom shell I built for my class. I focused on the quality of life features I wanted
+                        as I built it.</p>
+                    <a href="https://github.com/deafwired/deafshell" target="_blank" rel="noopener">[view repo]</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-meta">03.</p>
+                    <h3>deadlock draft</h3>
+                    <p>Live pick/ban draft tool for Deadlock with lobby sharing, host controls, timers, and support for
+                        both normal and street brawl formats.</p>
+                    <a href="https://draft.deafwired.dev" target="_blank" rel="noopener">[open draft]</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a class="social" href="https://github.com/deafwired" aria-label="GitHub" target="_blank" rel="noopener"><i
+                    class="fab fa-github"></i></a>
+            <a class="social" href="https://www.instagram.com/deafwired/" aria-label="Instagram" target="_blank"
+                rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a class="social" href="https://draft.deafwired.dev" aria-label="Draft" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-pen-to-square"></i></a>
+            <a class="social" href="https://www.linkedin.com/in/matthew-flynn-807a34187/" aria-label="LinkedIn"
+                target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a class="social" href="mailto:matt@deafwired.dev" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
     </footer>
-    <script src="repos.js"></script>
-    <script src="animate.js"></script>
     <script src="baffle.js"></script>
     <script src="darkmode.js"></script>
-  </body>
+</body>
+
 </html>
